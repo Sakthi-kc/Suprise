@@ -1,0 +1,56 @@
+* {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#surpriseMessage {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.decorative-btn {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    color: white !important;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 15px whitesmoke;
+}
+
+.decorative-btn:hover {
+    box-shadow: 0 0 25px whitesmoke, 0 0 40px whitesmoke;
+    transform: scale(1.05);
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    width: 200px;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
