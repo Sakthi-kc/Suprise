@@ -9,6 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,18 +21,34 @@
 
     <div class="container mt-6">
         <div class="row text-center">
-            <div class="col-md-6 ml-5 mt-4">
+            <div class="col-md-4 ml-5 mt-4">
                 <button class="btn decorative-btn btn-lg mt-4" onclick="showSurprise()">
                     Open
                 </button>
 
-                <div id="surpriseMessage" class="mt-4 d-none">
-                    <h2 class="text-center">🎉 Happy Valentines Day Mama 💑</h2>
-                    <p>You are my world 💖</p>
+                <div id="surpriseMessage" class="mt-4 d-none card">
+                    <div class="card shadow-lg p-4 text-center" style="max-width: 400px;">
+                        <div class="card-body">
+                            <h2>🎉 Happy Valentines Day Mama 💑</h2>
+                            <p class="text-dark">You are my world 💖</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-6 ml-5 mt-4">
+            <div class="col-md-4 ml-5 mt-4">
+                <button onclick="playAudio()" class="btn decorative-btn btn-lg mt-4">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+                <audio id="myAudio" src="audio.mpeg"></audio>
+
+                <button onclick="pauseAudio()" class="btn decorative-btn btn-lg mt-4">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+            </div>
+
+            <div class="col-md-4 ml-5 mt-4">
                 <button class="btn decorative-btn btn-lg mt-4" onclick="showPic()">
                     Click
                 </button>

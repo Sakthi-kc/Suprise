@@ -54,3 +54,13 @@ body {
     height: auto;
     animation: fadeIn 2s ease-in-out;
 }
+
+.card {
+    max-width: 400px;
+    background: radial-gradient(circle at center, #ffffff, rgba(255, 182, 193, 0.4));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    /* Rounded corners */
+    text-align: center;
+    color: black;
+}
